@@ -1,7 +1,7 @@
 import Layout<%= _type %> from '../../<%= type %>/components/layout';
 import SectionTitle from '../../backend/components/title';  /* only for backend */
 
-import Section<%= _section %> from '../components/<%= section %>';
+import Section<%= _section %> from './<%= section %>';
 
 require('../styles/<%= module %>.scss');
 
