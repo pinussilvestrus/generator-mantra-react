@@ -1,7 +1,8 @@
 'use strict';
 
-var generators = require('yeoman-generator');
-var assign = require('object.assign').getPolyfill();
+const generators = require('yeoman-generator');
+const assign = require('object.assign').getPolyfill();
+const basicModulesPath = 'src/modules';
 
 String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
@@ -50,21 +51,53 @@ module.exports = generators.Base.extend({
     // /actions
     this.fs.copyTpl(
       this.templatePath('actions/<%=module%>.js'),
-      this.destinationPath(this.props.module, 'actions', this.props.module + '.js'),
+      this.destinationPath(basicModulesPath, this.props.module, 'actions', this.props.module + '.js'),
       this.props
     );
 
     // /components
     this.fs.copyTpl(
       this.templatePath('components/<%=module%>.jsx'),
-      this.destinationPath(this.props.module, 'components', this.props.module + '.jsx'),
+      this.destinationPath(basicModulesPath, this.props.module, 'components', this.props.module + '.jsx'),
       this.props
     );
     this.fs.copyTpl(
       this.templatePath('components/<%=section%>.jsx'),
-      this.destinationPath(this.props.module, 'components', this.props.section + '.jsx'),
+      this.destinationPath(basicModulesPath, this.props.module, 'components', this.props.section + '.jsx'),
       this.props
     );
+
+    // /containers
+    this.fs.copyTpl(
+      this.templatePath('containers/<%=module%>.js'),
+      this.destinationPath(basicModulesPath, this.props.module, 'containers', this.props.module + '.js'),
+      this.props
+    );
+
+    // /styles
+    this.fs.copyTpl(
+      this.templatePath('styles/<%=module%>.scss'),
+      this.destinationPath(basicModulesPath, this.props.module, 'styles', this.props.module + '.scss'),
+      this.props
+    );
+    this.fs.copyTpl(
+      this.templatePath('styles/<%=section%>.scss'),
+      this.destinationPath(basicModulesPath, this.props.module, 'styles', this.props.section + '.scss'),
+      this.props
+    );
+
+    // /
+    this.fs.copyTpl(
+      this.templatePath('index.js'),
+      this.destinationPath(basicModulesPath, this.props.module, 'index.js'),
+      this.props
+    );
+    this.fs.copyTpl(
+      this.templatePath('routes.jsx'),
+      this.destinationPath(basicModulesPath, this.props.module, 'routes.jsx'),
+      this.props
+    );
+
   },
 
   end: function() {
