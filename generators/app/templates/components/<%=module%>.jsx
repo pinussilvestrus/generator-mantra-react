@@ -15,7 +15,7 @@ class <%= _module %> extends React.Component {
 		return (
 			<Layout<%= _type %> className="route-<%= module %>">
 				<SectionTitle title="<%= _module %>" />
-				<Section<%= section %> />
+				<Section<%= _section %> />
 			</Layout<%= _type %>>
 		);
 	}
