@@ -38,29 +38,6 @@ export default {
     Static
 };
 
-```
-
-INFO-2: You can limit permissions for new modules for a given role
-
-```js
-/** src/modules/routes.jsx**/
-import Test from './containers/test';
-
-export default [
-	{
-		path: '/test/',
-		name: 'test',
-		component: Test,
-		permission: 2
-		/**
-		0: default, student
-		1: teacher,
-		2: administrator
-		**/
-	}
-];
-```
-
 Have fun!
 
 ## License
