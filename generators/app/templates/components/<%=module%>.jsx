@@ -1,4 +1,4 @@
-import Layout<%= _type %> from '../../<%= type %>/components/layout';
+import Layout<%= _type %> from '../../<%= type %>/containers/layout';
 import SectionTitle from '../../backend/components/title';  /* only for backend */
 
 import Section<%= _section %> from './<%= section %>';
