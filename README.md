@@ -1,6 +1,8 @@
 # generator-mantra-react
 A Yeoman Generator for React Modules based on our Mantra philosophy (https://kadirahq.github.io/mantra/)
 
+[![Downloads](https://img.shields.io/npm/dt/generator-mantra-react.svg)](https://www.npmjs.com/package/generator-mantra-react)
+
 ## Getting Started
 
 ```bash
@@ -37,6 +39,7 @@ export default {
   <YourModule>,
     Static
 };
+```
 
 Have fun!
 
