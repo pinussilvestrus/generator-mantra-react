@@ -35,7 +35,7 @@ module.exports = generators.Base.extend({
       type    : 'input',
       name    : 'type',
       message : 'What is the name of the layout type?',
-      default : 'backend'
+      default : 'base'
     }]).then(function (answers) {
       this.props = assign(this.props, answers);
       this.props['_module'] = this.props.module.capitalizeFirstLetter();

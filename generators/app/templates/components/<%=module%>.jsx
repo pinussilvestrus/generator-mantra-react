@@ -1,5 +1,5 @@
 import Layout<%= _type %> from '../../<%= type %>/containers/layout';
-import SectionTitle from '../../backend/components/title';  /* only for backend */
+import SectionTitle from '../../base/components/title';  /* only for base */
 
 import Section<%= _section %> from './<%= section %>';
 
