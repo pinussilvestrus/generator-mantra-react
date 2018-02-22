@@ -24,6 +24,6 @@
   "homepage": "https://github.com/schulcloud/generator-mantra-react#readme",
   "dependencies": {
     "object.assign": "^4.0.4",
-    "yeoman-generator": "^0.24.1"
+    "yeoman-generator": "^2.0.3"
   }
 }
