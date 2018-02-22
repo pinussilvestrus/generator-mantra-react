@@ -1,4 +1,6 @@
 # generator-mantra-react
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/pinussilvestrus/generator-mantra-react.svg)](https://greenkeeper.io/)
 A Yeoman Generator for React Modules based on our Mantra philosophy (https://kadirahq.github.io/mantra/)
 
 [![Downloads](https://img.shields.io/npm/dt/generator-mantra-react.svg)](https://www.npmjs.com/package/generator-mantra-react)
